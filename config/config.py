@@ -1,6 +1,6 @@
-project_home = 'C:/Users/amaheswa/Documents/flask-project/poc1/flask-rest'
-project_temp = 'C:/Users/amaheswa/Documents/flask-project/poc1/flask-rest/temp'
-project_sql = 'C:/Users/amaheswa/Documents/flask-project/poc1/flask-rest/sql'
+project_home = '/app'
+project_temp = '/app/temp'
+project_sql = '/app/sql'
 
 config = {
         'host': 'jdv.prod.a4.vary.redhat.com',
