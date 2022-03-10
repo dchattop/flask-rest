@@ -78,4 +78,5 @@ api.add_resource(FetchApp, '/fetch_apps')
 api.add_resource(CustomSql, '/customsql')
 api.add_resource(GetViz, '/getviz')
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = 5000
+    app.run(debug=True, host='0.0.0.0', port=port)
