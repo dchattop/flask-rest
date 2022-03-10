@@ -1,0 +1,1 @@
+select account_id,account_name,cdh_party_type,it_budget,account_rating,annual_revenue,create_date_est,billing_country from APL_VDB_SFDC_SALES.sfdc_accnt where account_rating='Develop' limit 100

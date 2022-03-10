@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    API List Page
+{% endblock %}
+
+{% block content %}
+    <h2>List of API</h2>
+    <table class="table table-hover table-dark">
+        <tbody>
+            <!-- Your rows inside the table HERE:
+            <tr><td><a href="/leadmngmnt">1.Lead Management</a></td></tr>
+            <tr><td><a href="/leadmngmnt">2.Lead Management</a></td></tr>
+                Your Columns HERE -->
+                {% for api_item in api_list_items %}
+            <tr>
+                <td><a href="/fetch_apps/{{ api_item }}">{{ loop.index ~'. '~ api_item.upper() }}</a></td>
+            </tr>
+            {% endfor %}
+            <tr><td><a href="/getviz"># Get Visualization</a></td></tr>
+        </tbody>
+    </table>
+{% endblock %}
